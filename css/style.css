@@ -1,7 +1,72 @@
+/* Reset */
+
 * {
+    padding: 0;
+    margin: 0;
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+/* variaveis */
+
+:root{
+    --main-color: #FFBC00;
+    --main-text-color: #fff;
+    --border-color: #999;
+    --bio-bg-color: #171717;
+    --bio-border-color: #293544;
+    --about-bg-color: #111821;
+}
+
+/* Geral */
+.highlight{
+    color: var(--main-color);
+}
+
+/* containers*/
+#container {
+    display: flex;
+    flex-direction: row;
+    color: var(--main-color);
+}
+
+#bio-container{
+    flex: 1 1 20%;
+    min-height: 100vh;
+    background-color:var(--bio-bg-color);
+    text-align: center;
+    padding: 30px 12px;
+    border-right: 5px solid var(--bio-border-color);
+}
+
+#about-container{
+    flex: 1 1 80%;
+    min-width: 100vh;
+    background-color: var(--about-bg-color);
+    padding: 50px;
+}
+
+/*bio container*/
+#bio-container h2{
+    margin-bottom: 25px;
+}
+
+#bio-container p{
+    margin-bottom: 20px;
+}
+
+#bio-image{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+#social-container{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
 }
